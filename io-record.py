@@ -1,4 +1,5 @@
 #coding:utf-8
+import os
 
 #open a file
 f=open('/home/file.txt')
@@ -35,3 +36,6 @@ f.close()
 #or 
 with open('/home/file.txt') as f:
 	f.write('Hello,world')
+
+#列出当前目录下的文件和目录
+[expand for expand in os.listdir('.')]
